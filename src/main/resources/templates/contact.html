@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" th:href="@{/css/board.css}">
+</head>
+<body>
+<!-- header 추가 -->
+<div th:insert="/common/header.html" id="header"></div>
+
+<!-- Map Begin -->
+<div class="map">
+    <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.350908721604!2d127.11577081240767!3d37.52322459722528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca5c8be8cfe7d%3A0xbf379a79e8e4720b!2z66q97LSM7KCV!5e0!3m2!1sko!2skr!4v1696855083565!5m2!1sko!2skr"
+            height="600" style="border:0;" allowfullscreen=""></iframe>
+</div>
+<!-- Map End -->
+
+<!-- Contact Section Begin -->
+<section class="contact spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-6 col-sm-5">
+                <div class="contact__widget">
+                    <div class="contact__widget__item">
+                        <h4>Contact Us</h4>
+                        <ul>
+                            <li>(123) 456-78-910</li>
+                            <li>mj2277k@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="contact__widget__item">
+                        <h4>Address</h4>
+                        <p>88-7 Oryun-dong, Songpa-gu, Seoul, <br />South Korea</p>
+                    </div>
+                    <div class="contact__widget__time">
+                        <h4>Opentime</h4>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="contact__widget__time__item">
+                                    <ul>
+                                        <li>Monday - Friday</li>
+                                        <li><span>8 am - 9 pm</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="contact__widget__time__item">
+                                    <ul>
+                                        <li>Saturday - Sunday</li>
+                                        <li><span>8 am - 9 pm</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 offset-lg-1 col-md-6 col-sm-7">
+                <div class="contact__form">
+                    <h2>Your question?</h2>
+                    <form action="#">
+                        <input type="text" placeholder="Your Name">
+                        <input type="text" placeholder="Email">
+                        <textarea placeholder="Your Message"></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact Section End -->
+
+<!-- footer 추가 -->
+<div th:insert="common/footer.html" id="footer"></div>
+</body>
+</html>

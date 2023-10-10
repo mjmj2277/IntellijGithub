@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" th:href="@{/board.css}">
+</head>
+<body>
+<!-- header 추가 -->
+<div th:insert="/common/header.html" id="header"></div>
+
+<!-- Breadcrumb Begin -->
+<div class="breadcrumb-option set-bg" data-setbg="/bootstrap/img/breadcrumb-bg.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="breadcrumb__text">
+                    <h1>update</h1>
+                    <div class="breadcrumb__links">
+                        <a href="/board">BoardList</a>
+                        <span>update</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumb End -->
+
+<!--update form-->
+<form th:action="@{'/post/edit/' + ${boardDto.boardId}}" method="post">
+    <input type="hidden" name="_method" value="put"/>
+    <input type="hidden" name="id" th:value="${boardDto.boardId}"/>
+
+    제목 : <input type="text" name="title" th:value="${boardDto.title}"> <br>
+    작성자 : <input type="text" name="writer" th:value="${boardDto.writer}" readonly> <br>
+    <textarea name="content" th:text="${boardDto.content}"></textarea><br>
+
+    <input type="submit" value="수정">
+</form>
+<!-- footer 추가 -->
+<div th:insert="common/footer.html" id="footer"></div>
+</body>
+</html>

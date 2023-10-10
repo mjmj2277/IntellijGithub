@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" th:href="@{/board.css}">
+</head>
+<body>
+<!-- header 추가 -->
+<div th:insert="/common/header.html" id="header"></div>
+
+<!-- Breadcrumb Begin -->
+<div class="breadcrumb-option set-bg" data-setbg="/bootstrap/img/breadcrumb-bg.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="breadcrumb__text">
+                    <h1>Board</h1>
+                    <div class="breadcrumb__links">
+                        <a href="/">Home</a>
+                        <span>Board</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumb End -->
+
+<!--list form-->
+<div id="wrap">
+
+    <a th:href="@{/post}">글쓰기</a>
+
+    <form action="/board/search" method="GET">
+        <div class="search-box">
+            <input name="keyword" type="text" placeholder="검색어를 입력해주세요">
+        <button>검색하기</button>
+        </div>
+
+    </form>
+
+    <table>
+        <thead>
+        <tr>
+            <th>번호</th>
+            <th>글제목</th>
+            <th>작성자</th>
+            <th>작성일</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <!-- CONTENTS !-->
+        <tr th:each="board : ${boardList}">
+            <td>
+                <span th:text="${board.boardId}"></span>
+            </td>
+            <td>
+                <a th:href="@{'/post/' + ${board.boardId}}">
+                    <span th:text="${board.title}"></span>
+                </a>
+            </td>
+            <td>
+                <span th:text="${board.writer}"></span>
+            </td>
+            <td>
+                <span th:text="${#temporals.format(board.createdDate, 'yyyy-MM-dd HH:mm')}"></span>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <div class ="pagination">
+    <span th:each="pageNum : ${pageList}" th:inline="text">
+        <a th:href="@{'/board?page=' + ${pageNum}}">[[${pageNum}]]</a>
+    </span>
+    </div>
+</div>
+
+<!-- footer 추가 -->
+<div th:insert="common/footer.html" id="footer"></div>
+</body>
+</html>

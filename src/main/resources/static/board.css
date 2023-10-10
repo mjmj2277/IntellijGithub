@@ -1,0 +1,95 @@
+/* 테이블 스타일 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* 페이지 링크 스타일 */
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.pagination li {
+    margin: 0 5px;
+}
+
+.pagination a {
+    text-decoration: none;
+    padding: 8px 16px;
+    background-color: #E9AD28; /* 주황색 배경 */
+    color: #fff; /* 흰색 글자색 */
+    border-radius: 5px;
+}
+
+.pagination a.active {
+    background-color: #000; /* 검정색 배경 */
+}
+
+/* 검색 박스 스타일 */
+.search-box {
+    margin-bottom: 20px;
+}
+
+.search-box input[type="text"] {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #888; /* 회색 테두리 */
+    border-radius: 5px;
+}
+
+.search-box button {
+    padding: 10px 16px;
+    background-color: #E9AD28; /* 주황색 배경 */
+    color: #fff; /* 흰색 글자색 */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* 게시글 작성 버튼 스타일 */
+.new-post-button {
+    margin-bottom: 20px;
+}
+
+.new-post-button a {
+    text-decoration: none;
+    padding: 12px 24px;
+    background-color: #E9AD28; /* 주황색 배경 */
+    color: #fff; /* 흰색 글자색 */
+    border-radius: 5px;
+}
+
+.new-post-button a:hover {
+    background-color: #888; /* 회색 배경 */
+}
+
+/* 페이지 컨테이너 스타일 */
+#wrap {
+    padding: 5% 0%;
+}
+
+#wrap > * {
+    margin: 3% 0%;
+}
+
+.search {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+}
