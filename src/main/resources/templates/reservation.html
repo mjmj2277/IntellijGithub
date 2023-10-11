@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<!-- header 추가 -->
+<div th:insert="/common/header.html" id="header"></div>
+
+<!-- Home Room Section Begin -->
+<section class="home-room spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <h5>OUR ROOM</h5>
+                    <h2>객실 선택</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+                <div class="home__room__item set-bg" data-setbg="/bootstrap/img/home-room/hr-1.jpg">
+                    <div class="home__room__title">
+                        <h4>그랜드 디럭스 룸</h4>
+                    </div>
+                    <a href="#">예약하기</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+                <div class="home__room__item set-bg" data-setbg="/bootstrap/img/home-room/hr-2.jpg">
+                    <div class="home__room__title">
+                        <h4>프리미어 룸</h4>
+                    </div>
+                    <a href="#">예약하기</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+                <div class="home__room__item set-bg" data-setbg="/bootstrap/img/home-room/hr-3.jpg">
+                    <div class="home__room__title">
+                        <h4>프레지덴셜 스위트 룸</h4>
+                    </div>
+                    <a href="#">예약하기</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+                <div class="home__room__item set-bg" data-setbg="/bootstrap/img/home-room/hr-4.jpg">
+                    <div class="home__room__title">
+                        <h4>로얄 스위트 룸</h4>
+                    </div>
+                    <a href="#">예약하기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Home Room Section End -->
+
+<!-- footer 추가 -->
+<div th:insert="common/footer.html" id="footer"></div>
+</body>
+</html>

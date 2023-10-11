@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<!-- header 추가 -->
+<div th:insert="/common/header.html" id="header"></div>
+
+<!-- Breadcrumb Begin -->
+<div class="breadcrumb-option set-bg" data-setbg="/bootstrap/img/breadcrumb-bg.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="breadcrumb__text">
+                    <h1>Our Room</h1>
+                    <div class="breadcrumb__links">
+                        <a href="/">홈</a>
+                        <a href="/about">호텔 소개</a>
+                        <span>객실 정보</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumb End -->
+
+<!-- Rooms Section Begin -->
+<section class="rooms spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 p-0 order-lg-2 order-md-2 col-md-6">
+                <div class="room__pic__slider owl-carousel">
+                    <div class="room__pic__item set-bg" data-setbg="/bootstrap/img/rooms/room-1.jpg"></div>
+                    <div class="room__pic__item set-bg" data-setbg="/bootstrap/img/rooms/room-2.jpg"></div>
+                    <div class="room__pic__item set-bg" data-setbg="/bootstrap/img/rooms/room-3.jpg"></div>
+                    <div class="room__pic__item set-bg" data-setbg="/bootstrap/img/rooms/room-4.jpg"></div>
+                </div>
+            </div>
+            <div class="col-lg-6 p-0 order-lg-1 order-md-1 col-md-6">
+                <div class="room__text">
+                    <h3>그랜드 디럭스 룸</h3>
+                    <ul>
+                        <li><span>객실면적</span>40-50㎡</li>
+                        <li><span>투숙인원</span>2명</li>
+                        <li><span>침대타입</span>더블</li>
+                        <li><span>전망</span>시티뷰/리버뷰</li>
+                    </ul>
+                    <a href="/room_details/GrandDeluxe">자세히 보기</a>
+                    <a href="#" class="primary-btn">예약 하기</a>
+                </div>
+            </div>
+            <div class="col-lg-6 p-0 order-lg-3 order-md-3 col-md-6">
+                <div class="room__pic__slider owl-carousel">
+                    <div class="room__pic__item set-bg" data-setbg="/bootstrap/img/rooms/room-2.jpg"></div>
+                    <div class="room__pic__item set-bg" data-setbg="/bootstrap/img/rooms/room-3.jpg"></div>
+                    <div class="room__pic__item set-bg" data-setbg="/bootstrap/img/rooms/room-4.jpg"></div>
+                    <div class="room__pic__item set-bg" data-setbg="/bootstrap/img/rooms/room-1.jpg"></div>
+                </div>
+            </div>
+            <div class="col-lg-6 p-0 order-lg-4 order-md-4 col-md-6">
+                <div class="room__text right__text">
+                    <h3>로얄 스위트 룸</h3>
+                    <ul>
+                        <li><span>객실면적</span>353㎡</li>
+                        <li><span>투숙인원</span>3명</li>
+                        <li><span>침대타입</span>더블</li>
+                        <li><span>전망</span>시티뷰</li>
+                    </ul>
+                    <a href="/room_details/RoyalSuite">자세히 보기</a>
+                    <a href="#" class="primary-btn">예약 하기</a>
+                </div>
+            </div>
+            <div class="col-lg-6 p-0 order-lg-6 order-md-6 col-md-6">
+                <div class="room__pic__slider owl-carousel">
+                    <div class="room__pic__item set-bg" data-setbg="/bootstrap/img/rooms/room-3.jpg"></div>
+                    <div class="room__pic__item set-bg" data-setbg="/bootstrap/img/rooms/room-4.jpg"></div>
+                    <div class="room__pic__item set-bg" data-setbg="/bootstrap/img/rooms/room-2.jpg"></div>
+                    <div class="room__pic__item set-bg" data-setbg="/bootstrap/img/rooms/room-1.jpg"></div>
+                </div>
+            </div>
+            <div class="col-lg-6 p-0 order-lg-5 order-md-5 col-md-6">
+                <div class="room__text">
+                    <h3>프리미어 룸</h3>
+                    <ul>
+                        <li><span>객실면적</span>46-60㎡</li>
+                        <li><span>투숙인원</span>2명</li>
+                        <li><span>침대타입</span>더블/트윈</li>
+                        <li><span>전망</span>시티뷰/리버뷰</li>
+                    </ul>
+                    <a href="/room_details/Premier">자세히 보기</a>
+                    <a href="#" class="primary-btn">예약 하기</a>
+                </div>
+            </div>
+            <div class="col-lg-6 p-0 order-lg-7 order-md-7 col-md-6">
+                <div class="room__pic__slider owl-carousel">
+                    <div class="room__pic__item set-bg" data-setbg="/bootstrap/img/rooms/room-4.jpg"></div>
+                    <div class="room__pic__item set-bg" data-setbg="/bootstrap/img/rooms/room-1.jpg"></div>
+                    <div class="room__pic__item set-bg" data-setbg="/bootstrap/img/rooms/room-2.jpg"></div>
+                    <div class="room__pic__item set-bg" data-setbg="/bootstrap/img/rooms/room-3.jpg"></div>
+                </div>
+            </div>
+            <div class="col-lg-6 p-0 order-lg-8 order-md-8 col-md-6">
+                <div class="room__text right__text">
+                    <h3>프레지덴셜 스위트 룸</h3>
+                    <ul>
+                        <li><span>객실면적</span>140㎡</li>
+                        <li><span>투숙인원</span>2명</li>
+                        <li><span>침대타입</span>더블</li>
+                        <li><span>전망</span>시티뷰</li>
+                    </ul>
+                    <a href="/room_details/PresidentialSuite">자세히 보기</a>
+                    <a href="#" class="primary-btn">예약 하기</a>
+                </div>
+            </div>
+        </div>
+</section>
+<!-- Rooms Section End -->
+
+<!-- footer 추가 -->
+<div th:insert="common/footer.html" id="footer"></div>
+</html>

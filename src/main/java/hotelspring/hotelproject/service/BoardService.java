@@ -36,7 +36,7 @@ public class BoardService {
 
         Page<Board> page = boardRepository
                 .findAll(PageRequest
-                        .of(pageNum-1, PAGE_POST_COUNT, Sort.by(Sort.Direction.ASC,"createdDate")));
+                        .of(pageNum - 1, PAGE_POST_COUNT, Sort.by(Sort.Direction.ASC,"createdDate")));
 
         List<Board> boards = page.getContent();
         List<BoardDto> boardDtoList = new ArrayList<>();
@@ -57,15 +57,15 @@ public class BoardService {
         Integer totalLastPageNum = (int)(Math.ceil((postsTotalCount/PAGE_POST_COUNT)));
 
         // 현재 페이지를 기준으로 블럭의 마지막 페이지 번호 계산
-        Integer blockLastPageNum = (totalLastPageNum > curPageNum + BLOCK_PAGE_NUM_COUNT)
-                ? curPageNum + BLOCK_PAGE_NUM_COUNT
-                : totalLastPageNum;
+        Integer blockLastPageNum = (totalLastPageNum > curPageNum + BLOCK_PAGE_NUM_COUNT - 1)
+                ? curPageNum + BLOCK_PAGE_NUM_COUNT - 1
+                : totalLastPageNum - 1;
 
         // 페이지 시작 번호 조정
         curPageNum = (curPageNum<=3) ? 1 : curPageNum - 2;
 
         //페이지 번호 할당
-        for(int val=curPageNum, i=0; val<=blockLastPageNum; val++, i++) {
+        for(int val = curPageNum, i=0; val <= blockLastPageNum; val++, i++) {
             pageList[i] = val;
         }
 

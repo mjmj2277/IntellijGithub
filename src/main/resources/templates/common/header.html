@@ -4,7 +4,7 @@
     <meta name="keywords" content="Hiroto, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hiroto | Template</title>
+    <title>Omilo | Template</title>
 
     <!-- Css Styles -->
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" type="text/css">
@@ -27,16 +27,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">
-<!--                    <div class="header__top__right">-->
-                        <div class="header__top__auth">
-                            <ul>
-<!--                                <li><a href="/reservation_list">예약조회</a></li>-->
-                                <li sec:authorize="isAnonymous()"><a th:href="@{/login}">로그인</a></li>
-                                <li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">로그아웃</a></li>
-                                <li><a href="/signup">회원가입</a></li>
-                            </ul>
-                        </div>
-<!--                    </div>-->
+                    <div class="header__top__auth">
+                        <ul>
+                            <li sec:authorize="isAnonymous()"><a th:href="@{/login}">로그인</a></li>
+                            <li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">로그아웃</a></li>
+                            <li><a href="/signup">회원가입</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -46,7 +43,7 @@
             <div class="row">
                 <div class="col-lg-2">
                     <div class="header__logo">
-                        <a href="/"><img src="/bootstrap/img/logo.png" alt=""></a>
+                        <a href="/"><img src="/bootstrap/img/omilo_logo.jpg" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-10">
@@ -54,11 +51,11 @@
                         <nav class="header__menu">
                             <ul class="menu__class">
                                 <li class="active"><a href="/">Home</a></li>
-                                <li><a href="/room_reservation">객실 예약</a></li>
-                                <li><a href="#">호텔 소개</a>
+                                <li><a href="/reservation">객실 예약</a></li>
+                                <li><a href="/about">호텔 소개</a>
                                     <ul class="dropdown">
                                         <li><a href="/contact">호텔 찾기</a></li>
-                                        <li><a href="/room_detail">객실 정보</a></li>
+                                        <li><a href="/room">객실 정보</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="/board">공지사항</a></li>

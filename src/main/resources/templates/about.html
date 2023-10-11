@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<!-- header 추가 -->
+<div th:insert="/common/header.html" id="header"></div>
+
+<!-- Breadcrumb Begin -->
+<div class="breadcrumb-option set-bg" data-setbg="/bootstrap/img/breadcrumb-bg.jpg">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <div class="breadcrumb__text">
+          <h1>About Us</h1>
+          <div class="breadcrumb__links">
+            <a href="/">홈</a>
+            <span>호텔 소개</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Breadcrumb End -->
+
+<!-- About Section Begin -->
+<section class="about spad">
+  <div class="container">
+    <div class="about__content">
+      <div class="row">
+        <div class="col-lg-5">
+          <div class="section-title">
+            <h5>Our Specialization</h5>
+            <h2>Welcome Omilo</h2>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="about__text">
+            <p>여행의 새로운 기억을 만들기 위한 최적의 출발점, 바로 여기에서 시작하세요</p>
+            <p>우리 호텔은 풍부한 편의시설과 탁월한 서비스로 여행자들을 맞이합니다. 아름다운 디자인과 편안한 객실은 휴식을 위한 완벽한 공간을 제공하며,
+               현지의 맛과 멋을 경험할 수 있는 레스토랑과 바도 자랑스럽게 운영됩니다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-6">
+        <div class="services__item">
+          <img src="/bootstrap/img/services/services-2.png" alt="">
+          <h4>리프레싱존</h4>
+          <p>최고급 스파, 피트니스센터 및 실내 수영장</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6">
+        <div class="services__item">
+          <img src="/bootstrap/img/services/services-4.png" alt="">
+          <h4>고품결 컨벤션</h4>
+          <p>한강 조망이 돋보이는 최신 트렌드의 컨셉</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6">
+        <div class="services__item">
+          <img src="/bootstrap/img/services/services-6.png" alt="">
+          <h4>미식가들을 위한 호텔</h4>
+          <p>샴페인 컬렉션 '바30'</p>
+          <p>미쉐린 1스타의 한식 레스토랑 '한국'</p>
+          <p>차 한잔의 여유 '라운지30'</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- About Section End -->
+
+<!-- History Section Begin -->
+<section class="history spad">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-title history-title">
+          <h5>지금까지</h5>
+          <h2>오밀로의 호텔 소개</h2>
+        </div>
+      </div>
+    </div>
+    <div class="history__content">
+      <div class="row">
+        <div class="col-lg-5 col-md-5">
+          <div class="history__item left__item">
+            <div class="history__date"></div>
+            <span>11 Dec 2000</span>
+            <h4>오밀로 서울</h4>
+            <img src="/bootstrap/img/history/history-1.jpg" alt="">
+            <p>고객에게 최적의 서비스와 안락한 공간 마련</p>
+          </div>
+          <div class="history__item left__item mb-0">
+            <div class="history__date"></div>
+            <span>29 Jan 2010</span>
+            <h4>자랑스러운 '스카이' 스파</h4>
+            <img src="/bootstrap/img/history/history-3.jpg" alt="">
+            <p>호텔 고객들의 만족도가 가장 높은 스파 서비스</p>
+          </div>
+        </div>
+        <div class="col-lg-5 offset-lg-2 col-md-5 offset-md-2">
+          <div class="history__item right__first__item">
+            <div class="history__date"></div>
+            <span>08 March 2020</span>
+            <h4>2020 올해의 호텔 상</h4>
+            <img src="/bootstrap/img/history/history-2.jpg" alt="">
+            <p>서울에서의 최고의 호텔에 수여하는, 2020 올해의 호텔</p>
+          </div>
+          <div class="history__item mb-0">
+            <div class="history__date"></div>
+            <span>06 July 2022</span>
+            <h4>오밀로 부산</h4>
+            <img src="/bootstrap/img/history/history-4.jpg" alt="">
+            <p>더 나아가는 호텔, 부산에 새로운 지점</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- History Section End -->
+
+<!-- footer 추가 -->
+<div th:insert="common/footer.html" id="footer"></div>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<!-- header 추가 -->
+<div th:insert="/common/header.html" id="header"></div>
+
+<!-- Rooms Section Begin -->
+<section class="rooms spad">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 p-0 order-lg-2 order-md-2 col-md-6">
+        <div class="room__pic__slider owl-carousel">
+          <div class="room__pic__item set-bg" data-setbg="/bootstrap/img/rooms/room-1.jpg"></div>
+          <div class="room__pic__item set-bg" data-setbg="/bootstrap/img/rooms/room-2.jpg"></div>
+          <div class="room__pic__item set-bg" data-setbg="/bootstrap/img/rooms/room-3.jpg"></div>
+          <div class="room__pic__item set-bg" data-setbg="/bootstrap/img/rooms/room-4.jpg"></div>
+        </div>
+      </div>
+      <div class="col-lg-6 p-0 order-lg-1 order-md-1 col-md-6">
+        <div class="room__text">
+          <h4>그랜드 디럭스룸</h4>
+          <ul>
+            <li>2023년 10월 12일 – 2023년 10월 13일 (1박)</li>
+            <li>객실 1개 | 성인 2인 어린이 0인</li>
+          </ul>
+          <ul>
+            <li><span>객실 요금</span>200,000 KRW</li>
+            <li><span>세금 및 봉사료</span>20,000 KRW</li>
+            <li><span>총 요금</span>220,000 KRW</li>
+          </ul>
+          <a href="#" class="primary-btn">예약 확정</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- footer 추가 -->
+<div th:insert="common/footer.html" id="footer"></div>
+</html>

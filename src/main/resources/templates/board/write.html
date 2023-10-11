@@ -30,11 +30,23 @@
 
 <!--write form-->
 <form action="/post" method="post">
-    제목 : <input type="text" name="title"> <br>
-    작성자 : <input type="text" name="writer"> <br>
-    <textarea name="content"></textarea><br>
-
-    <input type="submit" value="등록">
+    <table class="form-table">
+        <tr>
+            <th>제목</th>
+            <td><input type="text" name="title"></td>
+        </tr>
+        <tr>
+            <th>작성자</th>
+            <td><input type="text" name="writer"></td>
+        </tr>
+        <tr>
+            <th>내용</th>
+            <td><textarea name="content"></textarea></td>
+        </tr>
+    </table>
+    <div class="buttons">
+        <input type="submit" value="등록">
+    </div>
 </form>
 
 <!-- footer 추가 -->
